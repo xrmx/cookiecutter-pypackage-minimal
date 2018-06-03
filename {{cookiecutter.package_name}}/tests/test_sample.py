@@ -1,4 +1,6 @@
-# Sample Test passing with nose and pytest
+from unittest import TestCase
 
-def test_pass():
-    assert True, "dummy sample test"
+
+class SampleTestCase(TestCase):
+    def test_pass(self):
+        self.assertTrue("dummy sample test")
